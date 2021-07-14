@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link de las fuentes de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--link de hoja de estilos, para vincular el archivo CSS-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--este script sirve para linkear los iconos en toda la pagina-->
+    <script src="https://kit.fontawesome.com/aade8c0006.js" crossorigin="anonymous"></script>
+    <link href="img/DC_Comics_logo.svg.png" rel="icon">
+    <title>Clase 17 +Card</title>
+</head>
+<body>
+    <header>
+        <div class="nav_top">
+            <p>20% de descuento en todos los productos! </p>
+        </div>
+<!--Barra principal de la pagina-->
+        <nav>
+            <img src="img/OBJECTS.png">
+            <h2 class="titulo_web">Nombre Tienda</h2>
+        </nav>
+<!--Menu de navegacion de la pagina-->
+        <div class="nav_menu">
+            <a href="contacto.html">Contacto</a>
+            <a href="register.html">Registro</a>
+            <a href="login.html">Ingresar</a>
+        </div>
+    </header>
+<!--Encabezado del formulario-->
+    <div class="contenedor_max">
+    <div class="contenedor2">
+        <div class="form_head">
+            <h1 class="form_titulo">Añadí tu super!</h1>
+            <p>Agregá tu personaje favorito completando las opciones.</p>
+        </div>
+<!--Formulario principal-->
+        <div class="form_div">
+            <form class="addcard">
+<!--Div para cada seccion del Fomr-->                
+                <div class="form_secction">
+                    <label>Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+<!--Div para cada seccion del Fomr-->
+                <div class="form_secction">
+                    <label>Especie</label>
+                    <select name="especie" class="select_option" placeholder="Especie">
+                        <option value="dioses">Dioses</option>
+                        <option value="semidioses">Semidioses</option>
+                        <option value="extraterrestres">Extraterrestres</option>
+                        <option value="animaloides">Animaloides</option>
+                    </select>
+                </div>
+<!--Div para cada seccion del Fomr-->
+                <div class="form_secction">
+                    <label>Fecha</label>
+                    <input type="date" id="birthday" name="birthday_hero">
+                </div>
+<!--Div para cada seccion del Fomr-->
+                <div class="form_secction">
+                    <label>Agregar Foto</label>
+                    <div class="file-select" id="src-file1" >
+                        <input type="file" id="picture_hero" name="pincture_hero" placeholder="Seleccionar archivo">
+                    </div>
+                </div>
+<!--Div para cada seccion del Fomr-->
+                <div class="form_secction">
+                    <textarea placeholder="Descripción"></textarea>
+                </div>
+<!--Div con lista para el form-->
+                <div class="form_check">
+                            <p>Poderes</p>
+                            <ul>
+                                <li>
+                                    <input type="checkbox">
+                                    <label>Volar</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <label>SuperInteligencia</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <label>Vista de rayo láser</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <label>Billetera gorda</label>
+                                </li>
+                            </ul>
+
+                        <p>Tipo de personaje</p>
+                        <ul>
+                            <li>
+                                <input type="radio">
+                                <label>Héroe / Heroina</label>
+                            </li>
+                            <li>
+                                <input type="radio">
+                                <label>Villano / Villana</label>
+                            </li>
+                        </ul>
+                </div>
+<!--Boton del form-->
+            <div class="form_button">
+                <button class="contactoboton1" type="submit">Añadir</button>
+            </div>
+        </form>
+        </div>
+    </div>
+    </div>
+<!--Fin del form-->
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+</html>
